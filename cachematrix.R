@@ -1,7 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## This function gets and inverse of a matrix and then
+## saves it in cache
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -10,7 +11,7 @@ makeCacheMatrix <- function(x = matrix()) {
     m <<- NULL
   }
   get <- function() x
-  setinverse <- function(solve) m <<- solve(x)
+  setinverse <- function(solve) m <<- solve
   getinverse <- function() m
   list(set = set, get = get, 
        setinverse = setinverse,
